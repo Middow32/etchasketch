@@ -13,9 +13,9 @@ for (i = 0; i < 16; i++) {
         column.innerHTML = "";
         column.classList.add("column");
         row.appendChild(column);
-        column.onmouseover = function() {
-            this.style.backgroundColor = "blue";
-        };
+       // column.onmouseover = function() {
+       //     this.style.backgroundColor = "blue";
+       // };
     }
 }
 
