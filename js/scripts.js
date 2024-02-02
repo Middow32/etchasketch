@@ -1,17 +1,23 @@
-for (i = 0; i < 256; i++) {
+for (i = 0; i < 16; i++) {
+    
+    const row = document.createElement("div");
+    row.innerHTML = "";
+    row.classList.add("row");
 
-    if ((i%16) == 0)
-    {
-        var space = document.createElement("br");
-        document.getElementById("container").appendChild(space);
+
+    document.getElementById("container").appendChild(row);
+
+    var j = 0;
+
+    for (j = 0; j < 16; j++) {
+        const column = document.createElement("div");
+        column.innerHTML = "";
+        column.classList.add("column");
+        row.appendChild(column);
+        column.onmouseover = function() {
+            this.style.backgroundColor = "blue";
+        };
     }
-    const box = document.createElement("div");
-    box.innerHTML = "";
-    box.classList.add("grid");
-    box.onmouseover = function() {
-        this.style.backgroundColor = "blue";
-    };
-    document.getElementById("container").appendChild(box);
-
 }
+
 
