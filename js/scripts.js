@@ -4,7 +4,6 @@ for (i = 0; i < 16; i++) {
     row.innerHTML = "";
     row.classList.add("row");
 
-
     document.getElementById("container").appendChild(row);
 
     var j = 0;
