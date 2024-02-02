@@ -14,14 +14,3 @@
     width: 60%;
     gap: 0;       
 }
-
-.column:hover {
-    background-color: green;
-    
-}
-
-.column:not(:hover) {
-    background-color: white;
-    transition: 4s;
-}
-
